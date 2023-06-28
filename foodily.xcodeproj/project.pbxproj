@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		5FB9C6962A4C1A3700FABC68 /* foodilyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9C6952A4C1A3700FABC68 /* foodilyApp.swift */; };
-		5FB9C6982A4C1A3700FABC68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9C6972A4C1A3700FABC68 /* ContentView.swift */; };
+		5FB9C6982A4C1A3700FABC68 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9C6972A4C1A3700FABC68 /* HomeView.swift */; };
 		5FB9C69A2A4C1A3800FABC68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FB9C6992A4C1A3800FABC68 /* Assets.xcassets */; };
 		5FB9C69D2A4C1A3800FABC68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FB9C69C2A4C1A3800FABC68 /* Preview Assets.xcassets */; };
 		5FB9C6A72A4C1A3800FABC68 /* foodilyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9C6A62A4C1A3800FABC68 /* foodilyTests.swift */; };
 		5FB9C6B12A4C1A3800FABC68 /* foodilyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9C6B02A4C1A3800FABC68 /* foodilyUITests.swift */; };
 		5FB9C6B32A4C1A3800FABC68 /* foodilyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9C6B22A4C1A3800FABC68 /* foodilyUITestsLaunchTests.swift */; };
+		5FB9C6C42A4C4F7000FABC68 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9C6C32A4C4F7000FABC68 /* SplashView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		5FB9C6922A4C1A3700FABC68 /* foodily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = foodily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB9C6952A4C1A3700FABC68 /* foodilyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodilyApp.swift; sourceTree = "<group>"; };
-		5FB9C6972A4C1A3700FABC68 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5FB9C6972A4C1A3700FABC68 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5FB9C6992A4C1A3800FABC68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FB9C69C2A4C1A3800FABC68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5FB9C6A22A4C1A3800FABC68 /* foodilyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = foodilyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,7 @@
 		5FB9C6AC2A4C1A3800FABC68 /* foodilyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = foodilyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB9C6B02A4C1A3800FABC68 /* foodilyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodilyUITests.swift; sourceTree = "<group>"; };
 		5FB9C6B22A4C1A3800FABC68 /* foodilyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodilyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5FB9C6C32A4C4F7000FABC68 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,8 @@
 		5FB9C6942A4C1A3700FABC68 /* foodily */ = {
 			isa = PBXGroup;
 			children = (
+				5FB9C6BF2A4C4B1000FABC68 /* Views */,
 				5FB9C6952A4C1A3700FABC68 /* foodilyApp.swift */,
-				5FB9C6972A4C1A3700FABC68 /* ContentView.swift */,
 				5FB9C6992A4C1A3800FABC68 /* Assets.xcassets */,
 				5FB9C69B2A4C1A3800FABC68 /* Preview Content */,
 			);
@@ -125,6 +127,39 @@
 				5FB9C6B22A4C1A3800FABC68 /* foodilyUITestsLaunchTests.swift */,
 			);
 			path = foodilyUITests;
+			sourceTree = "<group>";
+		};
+		5FB9C6BF2A4C4B1000FABC68 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5FB9C6C22A4C4F5B00FABC68 /* SplashScreen */,
+				5FB9C6C12A4C4B2300FABC68 /* Details */,
+				5FB9C6C02A4C4B1D00FABC68 /* Home */,
+				5FB9C6972A4C1A3700FABC68 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5FB9C6C02A4C4B1D00FABC68 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5FB9C6C12A4C4B2300FABC68 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		5FB9C6C22A4C4F5B00FABC68 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5FB9C6C32A4C4F7000FABC68 /* SplashView.swift */,
+			);
+			path = SplashScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +292,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FB9C6982A4C1A3700FABC68 /* ContentView.swift in Sources */,
+				5FB9C6982A4C1A3700FABC68 /* HomeView.swift in Sources */,
 				5FB9C6962A4C1A3700FABC68 /* foodilyApp.swift in Sources */,
+				5FB9C6C42A4C4F7000FABC68 /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
